@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<style>
+	.item{
+	position:absolute;
+	height:300px;
+	width:300px;
+	border:2px solid red;
+	list-style:none;
+	}
+	</style>
+<script>
+	$(document).ready(function(){
+	$('.prev').click(function(){
+	$('li:last').prependTo('ul');	
+	})
+	
+	$('.next').click(function(){
+	$('li:first').appendTo('ul');
+	})
+	
+	/*$('.prev').click(function(){
+	pre();	
+	})*/
+	
+	
+})
+
+</script>
+</head>
+<body>
+	 <!-- <div class="container">
+      <div class="row">   
+			<div class="carousel-cover" style="width:200000px;background:gray;height: 300px;">
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+				<div class="item"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-fluid border"></a></div>
+			</div>	        
+      </div>----->
+	  
+		<div class="container">
+			<input type="button" class="next" value="Next"/>
+			<input type="button" class="prev mb-2" value="Previous"/>
+			<ul class="text-white text-center col-12">
+				<li class="item bg-dark">slider 1</li>
+				<li class="item bg-info">slider 2</li>
+				<li class="item bg-primary">slider 3</li>
+				<li class="item bg-info">slider 4</li>
+				<li class="item bg-dark">slider 5</li>
+				<li class="item bg-dark">slider 6</li>
+				<li class="item bg-primary">slider 7</li>
+				<li class="item bg-info">slider 8</li>
+			</ul>				
+		</div>
+		
+				
+		
+			
+		
+</body>
+
+</html>
